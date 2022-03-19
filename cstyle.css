@@ -1,0 +1,110 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.welcome{
+    background-image: linear-gradient(#ff5722,#ffc507,#ffc507,#ff5722);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+h2{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    z-index: 1;
+
+}
+ul li{
+    position: absolute;
+    border:1px solid #fff;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+}
+.square li{
+    top: 0vh;
+    left: 0vw;
+    animation: square 12s infinite
+}
+.square li:nth-child(2){
+    top: 80vh;
+    left: 10vw;
+    animation: square 6s infinite;
+}
+.square li:nth-child(3){
+    top: 80vh;
+    left: 85vw;
+    animation: square 10s infinite;
+    background-color: #fff;
+}
+.square li:nth-child(4){
+    top: 10vh;
+    left: 70vw;
+    animation: square 8s infinite
+}
+.square li:nth-child(5){
+    top: 10vh;
+    left: 10vw;
+    animation: square 15s infinite;
+    background-color: #fff;
+}
+@keyframes square{
+    0%{
+        transform: scale(1) rotateX(0deg) rotatey(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(5) rotateX(1000deg) rotatey(0deg);
+        opacity: 0;
+    }
+}
+.circle li{
+    bottom: 0;
+    left: 15vw;
+    animation: circle 5s infinite;
+    background-color: #fff;
+}
+.circle li:nth-child(2){
+    bottom: 0;
+    left: 35vw;
+    animation: circle 10s infinite;
+}
+.circle li:nth-child(3){
+    bottom: 0;
+    left: 55vw;
+    animation: circle 7s infinite;
+    background-color: #fff;
+}
+.circle li:nth-child(4){
+    bottom: 0;
+    left: 75vw;
+    animation: circle 8s infinite;
+}
+.circle li:nth-child(5){
+    bottom: 0;
+    left: 90vw;
+    animation: circle 6s infinite;
+    background-color: #fff;
+}
+@keyframes circle{
+    0%{
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+    100%{
+        transform: scale(5) rotate(1000deg);
+        opacity: 0;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+}
+

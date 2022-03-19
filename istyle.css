@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: Century Gothic;
+    
+}
+header{
+    background-image: linear-gradient(#ff5722,#ffc507);
+    height: 100vh;
+    background-size:contain;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: disc;
+    margin-top: 10px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:black ;
+    padding: 7px 30px;
+    border: 3px solid  black;
+    transition: 0.9s ease;
+    font-size: large;
+}
+ul li a:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.main{
+    max-width: 1400px;
+    max-height: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: black;
+    font-size: 500%;
+}
